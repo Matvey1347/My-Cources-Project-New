@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'matChips';
+  name = 'Matvey';
+  surname = 'Kapralov'
+  onNullifyName() {
+    this.name = '';
+  }
 }
