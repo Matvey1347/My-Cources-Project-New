@@ -9,4 +9,17 @@
   >Nullify your name</button>
   <!-- <app-warning-alert></app-warning-alert> -->
   <!-- <app-success-alert></app-success-alert> -->
+
+  <button (click)="onClickButton()">Display Details</button>
+
+  <p [ngStyle]="{display: (onShowPassword) ? 'block' : 'none' }">Серкетный пароль = тунец</p>
+
+  <p *ngFor="let button of buttonClicks; let i = index">
+    <span [ngStyle]="{
+      color: ( i > 3 ) ? 'white' : 'black',
+      background: ( i > 3 ) ? 'blue' : 'white'
+      }">
+      {{ button }}
+    </span>
+  </p>
 </div>
