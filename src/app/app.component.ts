@@ -11,6 +11,7 @@ export class AppComponent {
   onShowPassword = false;
   count = 0;
   buttonClicks: number[] = [];
+  currentFeature: string = 'recipe';
 
   onNullifyName() {
     this.name = '';
@@ -20,5 +21,9 @@ export class AppComponent {
     this.onShowPassword = !this.onShowPassword;
     this.count++;
     this.buttonClicks.push(this.count);
+  }
+
+  onChangeSection(feature: string) {
+    this.currentFeature = feature;
   }
 }
