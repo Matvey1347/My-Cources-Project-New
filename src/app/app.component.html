@@ -1,0 +1,29 @@
+<!-- <div class="container">
+  <input type="text" [(ngModel)]="name">
+  <div>{{ name }}</div>
+  <p>{{ surname }}</p>
+  <button 
+  class="btn btn-primary"
+  [disabled]="name === ''" 
+  (click)="onNullifyName()"
+  >Nullify your name</button> -->
+  <!-- <app-warning-alert></app-warning-alert> -->
+  <!-- <app-success-alert></app-success-alert> -->
+
+  <!-- <button (click)="onClickButton()">Display Details</button>
+
+  <p [ngStyle]="{display: (onShowPassword) ? 'block' : 'none' }">Серкетный пароль = тунец</p>
+
+  <p *ngFor="let button of buttonClicks; let i = index">
+    <span [ngStyle]="{
+      color: ( i > 3 ) ? 'white' : 'black',
+      background: ( i > 3 ) ? 'blue' : 'white'
+      }">
+      {{ button }}
+    </span>
+  </p>
+</div> -->
+<app-header></app-header>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
