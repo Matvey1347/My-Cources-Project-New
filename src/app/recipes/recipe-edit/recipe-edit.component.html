@@ -1,1 +1,48 @@
-<p>recipe-edit works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <form [formGroup]="editResipeForm">
+            <div class="row">
+                <div class="col-xs-12">
+                    <button
+                    type="submit"
+                    class="btn btn-success"
+                    >
+                        Save
+                    </button>
+                    <button
+                    type="submit"
+                    class="btn btn-danger"
+                    >
+                        Cancel
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label for="name">
+                            Name
+                        </label>
+                        <input 
+                        type="text"
+                        id="name"
+                        class="form-control"
+                        >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label
+                        for="imagePath"
+                        >
+                            Image URL
+                        </label>
+                        <input 
+                        type="text"
+                        id="imagePath"
+                        class="form-control"
+                        >
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
