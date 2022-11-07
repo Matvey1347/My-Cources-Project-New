@@ -25,6 +25,7 @@
                         type="text"
                         id="name"
                         class="form-control"
+                        formControlName="name"
                         >
                     </div>
                 </div>
@@ -35,11 +36,66 @@
                         >
                             Image URL
                         </label>
-                        <input 
+                        <input
                         type="text"
                         id="imagePath"
                         class="form-control"
+                        formControlName="imagePath"
                         >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img class="img-responsive" src="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label
+                        for="description"
+                        >
+                            Description
+                        </label>
+                        <textarea 
+                          type="text"
+                          id="description"
+                          class="form-control"
+                          rows="6"
+                          formControlName="description"
+                        >
+                        </textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div 
+                    class="col-xs-12"
+                    formArrayName="ingredients"
+                    >
+                        <div 
+                        class="row"
+                        *ngFor="let ingredientCtrl of controls; let i = index"
+                        formGroupName="i"
+                        >
+                            <div class="col-xs-8">
+                                <input 
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="name"
+                                >
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <input 
+                              type="number"
+                              class="form-control"
+                              formControlName="amount"
+                            >  
+                        </div>
+                        <div class="col-xs-2">
+                          <button class="btn btn-danger">
+                            X
+                          </button> 
+                        </div>          
                     </div>
                 </div>
             </div>
