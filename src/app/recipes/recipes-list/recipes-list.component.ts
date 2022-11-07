@@ -10,6 +10,30 @@ import { Recipe } from '../recipes.model';
 })
 export class RecipesListComponent implements OnInit {
   recipes: Recipe[] | undefined;
+  array = [
+    {
+      name: 'string',
+      amount: '1233',
+      reason: 'lorem ejdj jdwoijweo',
+    },
+    {
+      name: 'number',
+      amount: '4444',
+      reason: 'lorem ejdj jdwoijweo',
+    }
+    ,{
+      name: 'string',
+      amount: '5555',
+      reason: 'lorem ejdj jdwoijweo',
+    }
+    ,{
+      name: 'string',
+      amount: '9999',
+      reason: 'lorem ejdj jdwoijweo',
+    },
+  ];
+  filterString?: string;
+
   constructor(
     private recipesService: RecipesService,
     private router: Router,
@@ -29,5 +53,15 @@ export class RecipesListComponent implements OnInit {
 
   addRecipe() {
     this.router.navigate(['new'], {relativeTo: this.route})
+  }
+
+  onAddSomething() {
+    this.array.push(
+      {
+        name: 'string',
+        amount: '1233',
+        reason: 'lorem ejdj jdwoijweo',
+      }
+    )
   }
 }

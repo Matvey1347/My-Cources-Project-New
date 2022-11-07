@@ -20,6 +20,7 @@ import { ActiveUsersComponent } from './shared/practice/active-users/active-user
 import { DeactiveUsersComponent } from './shared/practice/deactive-users/deactive-users.component';
 import { NotSelectedRecipeComponent } from './recipes/not-selected-recipe/not-selected-recipe.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { FilterPipe } from './shared/pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     ActiveUsersComponent,
     DeactiveUsersComponent,
     NotSelectedRecipeComponent,
-    RecipeEditComponent
+    RecipeEditComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

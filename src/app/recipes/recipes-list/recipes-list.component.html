@@ -13,3 +13,23 @@
         ></app-recipes-item>
     </div>
 </div>
+
+
+<input class="form-control" type="text" [(ngModel)]="filterString">
+<button class="btn" (click)="onAddSomething()">Add something</button>
+
+<div *ngFor="let something of array | filter: filterString :'amount'">
+    <div class="list">
+        <div>
+            {{ something.name }}
+        </div>
+    
+        <div>
+            {{ something.amount }}
+        </div>
+    
+        <div>
+            {{ something.reason }}
+        </div>
+    </div>
+</div>
