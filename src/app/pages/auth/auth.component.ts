@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-auth',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthComponent implements OnInit {
   isLoginMode = true;
-
-  constructor() { }
+  authForm: FormGroup;
+  constructor(private fb: FormBuilder) {
+    this.authForm = fb.group({
+      email: fb.control('', [Validators.required, Validators.email]),
+      password: fb.control('', [Validators.required, Validators.minLength(6)]),
+    })
+  }
 
   ngOnInit(): void {
   }
@@ -18,7 +24,6 @@ export class AuthComponent implements OnInit {
   }
 
   onSubmit() {
-    
+    this.authForm.reset();
   }
-
 }
