@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NotSelectedRecipeComponent } from './recipes/not-selected-recipe/not-selected-recipe.component';
-import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
-import { RecipesDetailComponent } from './recipes/recipes-detail/recipes-detail.component';
-import { RecipesComponent } from './recipes/recipes.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { NotSelectedRecipeComponent } from './pages/recipes/not-selected-recipe/not-selected-recipe.component';
+import { RecipeEditComponent } from './pages/recipes/recipe-edit/recipe-edit.component';
+import { RecipesDetailComponent } from './pages/recipes/recipes-detail/recipes-detail.component';
+import { RecipesComponent } from './pages/recipes/recipes.component';
+import { ShoppingListComponent } from './pages/header/shopping-list/shopping-list.component';
 
 const routes: Routes = [
   {

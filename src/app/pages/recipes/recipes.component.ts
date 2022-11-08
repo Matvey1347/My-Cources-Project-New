@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { CustomeValidators } from '../shared/custome-validators/custome-validators';
+import { CustomeValidators } from '../../shared/custome-validators/custome-validators';
 
 @Component({
   selector: 'app-recipes',

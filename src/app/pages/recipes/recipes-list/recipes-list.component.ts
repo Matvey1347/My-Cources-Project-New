@@ -62,6 +62,6 @@ export class RecipesListComponent implements OnInit {
         amount: '1233',
         reason: 'lorem ejdj jdwoijweo',
       }
-    )
+    );
   }
 }
