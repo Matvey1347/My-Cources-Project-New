@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CounterService } from './counter.service';
+import { CounterService } from '../counterService/counter.service';
 
 @Injectable({
   providedIn: 'root'
