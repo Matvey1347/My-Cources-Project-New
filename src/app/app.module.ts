@@ -10,8 +10,8 @@ import { HeaderComponent } from './pages/header/header.component';
 import { RecipesComponent } from './pages/recipes/recipes.component';
 import { RecipesItemComponent } from './pages/recipes/recipes-item/recipes-item.component';
 import { RecipesListComponent } from './pages/recipes/recipes-list/recipes-list.component';
-import { ShoppingListComponent } from './pages/header/shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './pages/header/shopping-list/shopping-edit/shopping-edit.component';
+import { ShoppingListComponent } from './pages/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './pages/shopping-list/shopping-edit/shopping-edit.component';
 import { RecipesDetailComponent } from './pages/recipes/recipes-detail/recipes-detail.component';
 import { MyDirectiveDirective } from './shared/directives/myDirective/my-directive.directive';
 import { UnlessDirective } from './shared/directives/unless/unless.directive';
@@ -21,6 +21,7 @@ import { DeactiveUsersComponent } from './shared/practice/deactive-users/deactiv
 import { NotSelectedRecipeComponent } from './pages/recipes/not-selected-recipe/not-selected-recipe.component';
 import { RecipeEditComponent } from './pages/recipes/recipe-edit/recipe-edit.component';
 import { FilterPipe } from './shared/pipes/filter.pipe';
+import { AuthComponent } from './pages/auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { FilterPipe } from './shared/pipes/filter.pipe';
     DeactiveUsersComponent,
     NotSelectedRecipeComponent,
     RecipeEditComponent,
-    FilterPipe
+    FilterPipe,
+    AuthComponent
   ],
   imports: [
     BrowserModule,

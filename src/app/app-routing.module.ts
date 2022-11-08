@@ -4,7 +4,8 @@ import { NotSelectedRecipeComponent } from './pages/recipes/not-selected-recipe/
 import { RecipeEditComponent } from './pages/recipes/recipe-edit/recipe-edit.component';
 import { RecipesDetailComponent } from './pages/recipes/recipes-detail/recipes-detail.component';
 import { RecipesComponent } from './pages/recipes/recipes.component';
-import { ShoppingListComponent } from './pages/header/shopping-list/shopping-list.component';
+import { ShoppingListComponent } from './pages/shopping-list/shopping-list.component';
+import { AuthComponent } from './pages/auth/auth.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path:'shopping-list',
     component: ShoppingListComponent,
+  },
+  {
+    path:'auth',
+    component: AuthComponent,
   },
 ];
 
