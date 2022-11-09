@@ -22,6 +22,7 @@ import { NotSelectedRecipeComponent } from './pages/recipes/not-selected-recipe/
 import { RecipeEditComponent } from './pages/recipes/recipe-edit/recipe-edit.component';
 import { FilterPipe } from './shared/pipes/filter.pipe';
 import { AuthComponent } from './pages/auth/auth.component';
+import { PlaceholderDirective } from './shared/directives/placeholder/placeholder.directive';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AuthComponent } from './pages/auth/auth.component';
     NotSelectedRecipeComponent,
     RecipeEditComponent,
     FilterPipe,
-    AuthComponent
+    AuthComponent,
+    PlaceholderDirective
   ],
   imports: [
     BrowserModule,
