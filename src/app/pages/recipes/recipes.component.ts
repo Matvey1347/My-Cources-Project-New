@@ -10,7 +10,7 @@ import { SuccessAlertComponent } from '../success-alert/success-alert.component'
   styleUrls: ['./recipes.component.scss']
 })
 export class RecipesComponent implements OnInit {
-  @ViewChild(PlaceholderDirective)alertHost? : PlaceholderDirective;
+  @ViewChild(PlaceholderDirective) alertHost? : PlaceholderDirective;
   myForm: FormGroup;
   constructor(
     private fb: FormBuilder,
@@ -31,7 +31,8 @@ export class RecipesComponent implements OnInit {
       );
 
       const hostViewContainerRef = this.alertHost?.viewContainer;
-
+      console.log(this.alertHost);
+      
       const componentRef: any = hostViewContainerRef?.createComponent(alertSuccess);
 
       componentRef.instance.message = 'BBOY LOX'

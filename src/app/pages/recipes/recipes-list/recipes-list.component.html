@@ -17,8 +17,8 @@
 
 <input class="form-control" type="text" [(ngModel)]="filterString">
 <button class="btn" (click)="onAddSomething()">Add something</button>
-
-<div *ngFor="let something of array | filter: filterString :'amount'">
+<!--  | filter: filterString :'amount'" -->
+<div *ngFor="let something of array">
     <div class="list">
         <div>
             {{ something.name }}
