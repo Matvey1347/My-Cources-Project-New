@@ -15,11 +15,12 @@
     <div class="col-xs-12">
         <div 
         class="btn-group"
-        appDropDown
+        [class.open]="isOpen"
         >
             <button 
                 type="button" 
                 class="btn btn-primary dropdown-toggle"
+                (click)="isOpen = !isOpen"
                 >
                 Manage Recipe 
                 <span class="caret"></span>

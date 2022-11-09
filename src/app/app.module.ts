@@ -38,7 +38,7 @@ import { ShoppingListModule } from './pages/shopping-list/shopping-list.module';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    RecipesModule,
+    // RecipesModule,
     ShoppingListModule
   ],
   providers: [],

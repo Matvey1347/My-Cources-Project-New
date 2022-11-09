@@ -11,6 +11,8 @@ import { Recipe } from '../recipes.model';
 export class RecipesDetailComponent implements OnInit {
   recipe!: Recipe;
   id!: number;
+  isOpen? = false;
+
   constructor(
     private recipeService: RecipesService,
     private route: ActivatedRoute,

@@ -8,6 +8,7 @@ import { RecipesListComponent } from './recipes-list/recipes-list.component';
 import { RecipesDetailComponent } from './recipes-detail/recipes-detail.component';
 import { NotSelectedRecipeComponent } from './not-selected-recipe/not-selected-recipe.component';
 import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
+import { DropDownDirective } from 'src/app/shared/directives/dropDown/drop-down.directive';
 
 
 
@@ -35,5 +36,8 @@ import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
     NotSelectedRecipeComponent,
     RecipeEditComponent,
   ],
+  providers: [
+    DropDownDirective
+  ]
 })
 export class RecipesModule { }
